@@ -3,8 +3,8 @@ name: flask app deployment to ACI
 on:
     push:
       branches: [ "main" ]
-    pull_request:
-      branches: [ "main" ]
+    # pull_request:
+    #   branches: [ "main" ]
 
 jobs:
     build:
@@ -47,6 +47,6 @@ jobs:
             registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-            name: dwkim20
+            name: dwkim21
             location: 'korea central'
-            restart-policy: OnFailure
+            #restart-policy: OnFailure
