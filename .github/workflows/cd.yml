@@ -49,3 +49,4 @@ jobs:
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: dwkim0019
             location: 'korea central'
+            restart-policy: OnFailure
